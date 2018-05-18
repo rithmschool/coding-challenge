@@ -47,8 +47,9 @@ The expected response should contain the following:
         "features": [
           {
             "type": "Feature",
-            "properties": {},
-            "city": "Oakland",
+            "properties": {
+              "city": "Oakland"
+            },
             "geometry": {
               "type": "Point",
               "coordinates": [-122.08007812499999, 37.78808138412046]
