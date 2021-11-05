@@ -1,6 +1,10 @@
-# API Design Challenge
+# Rithm Coding Challenge
 
 ## What’s Required
+
+Build a full stack application that does the following:
+
+### Backend
 
 Write an API endpoint that returns a filtered set of users from the csv provided below.
 
@@ -14,7 +18,7 @@ Write an API endpoint that returns a filtered set of users from the csv provided
 
 | Parameter | Description                                    |
 | --------- | ---------------------------------------------- |
-| gender    | Your gender preference: m (male) or f (female) |
+| fav_color | Your favorite color                            |
 | dist      | Maximum match distance in miles                |
 | origin    | lat/long string of your location               |
 | min_age   | Minimum age preference                         |
@@ -22,7 +26,7 @@ Write an API endpoint that returns a filtered set of users from the csv provided
 
 Given the following request:
 
-GET `/users?gender=f&dist=100&origin=37.774929,-122.419416&min_age=21&max_age=29`
+GET `/users?fav_color=green&dist=100&origin=37.774929,-122.419416&min_age=21&max_age=29`
 
 The expected response should contain the following:
 
@@ -31,7 +35,7 @@ The expected response should contain the following:
   "metadata": {
     "path": "/users",
     "query": {
-      "gender": "f",
+      "fav_color": "red",
       "dist": 100,
       "origin": "37.774929,-122.419416",
       "min_age": 21,
@@ -71,7 +75,7 @@ The expected response should contain the following:
         "id": 1,
         "name": "Taylor Swift",
         "age": 27,
-        "gender": "f"
+        "fav_color": "red"
       }
     }
   ]
@@ -81,3 +85,7 @@ The expected response should contain the following:
 All query parameters are optional. If a query parameter is missing or the value is invalid, you should skip the related filter.
 
 All minimum and maximum fields should be inclusive (e.g. min_age=21&max_age=23 should return users with an age of 21, 22, or 23).
+
+### Frontend
+
+Your application should have a frontend that displays a form and allows a user to input the favorite color, distance, origin and min and max age. When the form is submitted, a map should render with markers for the location of the users found.
