@@ -11,8 +11,10 @@ Write an API endpoint that returns a filtered set of users from the csv provided
 * Your API endpoint URL is /users
 * Your API responds in the above format with valid GeoJSON
 * Your API should correctly filter any combination of API parameters
-* Your API should utilize a datastore
+* Your API should utilize a database
 * Your API should support paginating the number of resulting users
+* This should be built using Express or Flask
+* Your API should be tested
 
 ## API Structure
 
@@ -89,3 +91,4 @@ All minimum and maximum fields should be inclusive (e.g. min_age=21&max_age=23 s
 ### Frontend
 
 Your application should have a frontend that displays a form and allows a user to input the favorite color, distance, origin and min and max age. When the form is submitted, a map should render with markers for the location of the users found.
+
