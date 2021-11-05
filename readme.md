@@ -28,7 +28,7 @@ Write an API endpoint that returns a filtered set of users from the csv provided
 
 Given the following request:
 
-GET `/users?fav_color=green&dist=100&origin=37.774929,-122.419416&min_age=21&max_age=29`
+GET `/users?fav_color=red&dist=100&origin=37.774929,-122.419416&min_age=21&max_age=29`
 
 The expected response should contain the following:
 
@@ -90,5 +90,5 @@ All minimum and maximum fields should be inclusive (e.g. min_age=21&max_age=23 s
 
 ### Frontend
 
-Your application should have a frontend that displays a form and allows a user to input the favorite color, distance, origin and min and max age. When the form is submitted, a map should render with markers for the location of the users found.
+Your application should have a frontend that displays a form and allows a user to input a favorite color, distance, origin and min and max age. When the form is submitted, a map should render with markers for the location of the users found. You can use Mapbox, Leaflet or any provider for this functionality.
 
