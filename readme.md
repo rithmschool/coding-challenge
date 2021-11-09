@@ -58,7 +58,7 @@ The expected response should contain the following:
             },
             "geometry": {
               "type": "Point",
-              "coordinates": [-122.08007812499999, 37.78808138412046]
+              "coordinates": [-122.2711, 37.8044]
             }
           },
           {
@@ -68,7 +68,7 @@ The expected response should contain the following:
             },
             "geometry": {
               "type": "Point",
-              "coordinates": [-120.498046875, 36.24427318493909]
+              "coordinates": [-122.419416, 37.774929]
             }
           }
         ]
