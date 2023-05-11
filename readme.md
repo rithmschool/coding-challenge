@@ -14,7 +14,7 @@ Write an API endpoint that returns a filtered set of users from the csv provided
 * Your API should utilize a database
 * Your API should support paginating the number of resulting users
 * This should be built using Express or Flask
-* Your API should be tested
+* Your API should be tested 
 
 ## API Structure
 
@@ -90,5 +90,5 @@ All minimum and maximum fields should be inclusive (e.g. min_age=21&max_age=23 s
 
 ### Frontend
 
-Your application should have a frontend that displays a form and allows a user to input a favorite color, distance, origin and min and max age. When the form is submitted, a map should render with markers for the location of the users found. You can use Mapbox, Leaflet or any provider for this functionality.
+Your application should have a frontend built with React, that displays a form and allows a user to input a favorite color, distance, origin and min and max age. When the form is submitted, a map should render with markers for the location of the users found. You can use Mapbox, Leaflet or any provider for this functionality. 
 
